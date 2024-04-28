@@ -1,0 +1,83 @@
+@import 'variables';
+
+@import 'bootstrap';
+
+.card-img-top {
+    overflow: hidden;
+
+    img {
+        object-fit: cover;
+        max-height: 14rem;
+        height: 100%;
+    }
+}
+
+.card-body {
+    padding-bottom: 0;
+}
+
+.card-footer {
+    background-color: white;
+    border-top: none;
+}
+
+.color-choice-box,
+.symbol-choice-box {
+    width: 4rem;
+    height: 4rem;
+    border: 0.2rem black solid;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-choice-box.selected,
+.symbol-choice-box.selected {
+    border: 0.2rem $primary solid;
+}
+
+.product-image-container {
+    position: relative;
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .design-symbol {
+        top: 4rem;
+    }
+}
+
+.cart-item-image {
+    min-height: 150px;
+    position: relative;
+
+    img {
+        position: absolute;
+    }
+
+    .design-symbol {
+        top: 2rem;
+        left: 2.75rem;
+    }
+}
+
+
+.pre-order-image-container {
+    min-height: 110px;
+    min-width: 130px;
+    position: relative;
+
+    img {
+        position: absolute;
+    }
+
+    .design-symbol {
+        top: 1.2rem;
+        left: 1.6rem;
+    }
+}
